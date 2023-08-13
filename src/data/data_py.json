@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "HelloVue",
+        "image": "src/assets/img/projects/hello_vue.png",
+        "environment": "Vue 3 + Vite",
+        "paks": "",
+        "stack": "HTML - CSS - JS",
+        "link": "https://junglekiosk.github.io/HelloVue/",
+        "data": "Jun/07/2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit tenetur rerum saepe consequatur quam inventore autem assumenda tempora sapiente deleniti facilis dicta iure, corrupti in odio fugit. Officiis, aperiam accusantium."
+    }
+]

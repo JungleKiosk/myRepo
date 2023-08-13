@@ -4,7 +4,7 @@
 
 import { useRoute } from 'vue-router';
 import { ref, onBeforeMount } from "vue";
-import projects from "../data/data.json"
+import projects from "../data/data_projects.json"
 
 const project = ref(null)
 const route = useRoute()
@@ -27,15 +27,21 @@ onBeforeMount(() => {
             <h1>{{ project.name }}</h1>
             <div class="col-lg-6 align-items-center">
                 <div class="col-lg-12" v-if="project">
-                    <p>environment: {{ project.environment }}</p>
-                    <p>stack: {{ project.stack }}</p>
-                    <p>data: {{ project.data }}</p>
+                    <br>
+                    <h3>Environment: </h3>
+                    <p>{{ project.environment }}</p>
+                    <br>
+                    <h3>Stack:</h3>
+                    <p> {{ project.stack }}</p>
+                    <br>
+                    <h3>Start date:</h3>
+                    <p>{{ project.data }}</p>
                 </div>
                 <div v-else>
                     <h1>Not Found</h1>
                 </div>
             </div>
-            
+
             <div class="col-lg-6" v-if="project">
                 <p> {{ project.desc }}</p>
                 <a v-if="project.link" :href="project.link" target="_blank">Go to project</a>
@@ -47,7 +53,21 @@ onBeforeMount(() => {
 
 
         </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <router-link v-if="prevProject" :to="`/project/${prevProject.id}`" class="btn btn-primary">Previous
+                    Project</router-link>
+            </div>
+            <div class="col-lg-6 text-right">
+                <router-link v-if="nextProject" :to="`/project/${nextProject.id}`" class="btn btn-primary">Next
+                    Project</router-link>
+            </div>
+        </div>
+
     </div>
 </template>
+
+
 
 <style scoped></style>

@@ -1,6 +1,6 @@
 <script>
 
-import projectsData from "../data/data.json";
+import projectsData from "../data/data_projects.json";
 import { ref } from "vue";
 import {useRouter} from "vue-router"
 
@@ -21,19 +21,19 @@ export default {
 
 
 <template>
-    <div class="container p-5">
-        <div class="row">
+    <div id="my_proj" class="container p-5">
+        <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 text-center">
-                <div class="cards row m-5 p-5">
-                    <h1>Projects</h1>
-                    <div :to="`/project/${project.id}`" class="col-lg-4 col-md-4 col-sm-6 mb-4"
+                <h1>my Projects</h1>
+                <div class="cards row m-5 p-5 justify-content-center">
+                    <div :to="`/project/${project.id}`" class="col-lg-3 col-md-4 col-sm-6"
                     v-for="project in projects"
                     :key="project.id"
                     @click="router.push(`/project/${project.id}`)" >
 
-                        <div class="card">
-                            <h1>{{ project.name }}</h1>
-                            <p>{{ project.price }}</p>
+                        <div class="card p-2 my-2 rounded-4 d-flex align-items-center justify-content-center">
+                            <h4 class="mb-0 ">{{ project.name }}</h4>
+                            <img :src="project.image" alt="Project Image" class=" my-3 rounded-2">
                         </div>
 
                     </div>
@@ -44,6 +44,11 @@ export default {
 </template>
 
 <style scoped>
+
+img{
+    max-width: 100%;
+    max-height: 150px;
+}
 
 
 </style>

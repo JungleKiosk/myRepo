@@ -5,8 +5,7 @@ import AboutView from "../views/AboutView.vue"
 import ProjectsView from "../views/ProjectsView.vue"
 import MyProjectsView from "../views/MyProjectsView.vue"
 import NotFoundView from "../views/NotFoundView.vue"
-
-
+import PyLearnView from "../views/PyLearnView.vue"
 
 
 
@@ -32,6 +31,11 @@ const router = createRouter({
             path: "/project/:id",
             name: "project",
             component: ProjectsView
+        },
+        {
+            path: "/pylearn/",
+            name: "pylearn",
+            component: PyLearnView
         },
         {
             path: "/:pathMatch(.*)*",
