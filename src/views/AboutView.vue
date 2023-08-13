@@ -7,10 +7,6 @@
 
 <template>
     <div id="cont" class="container p-5">
-        <!--         <div class="links">
-            <a class="px-2" href="/">Home</a>
-            <a class="px-2" href="/about">About</a>
-        </div> -->
         <div class="row">
             <h1>About</h1>
             <div class="col-lg-12">
@@ -22,4 +18,6 @@
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
