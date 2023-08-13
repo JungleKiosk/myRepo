@@ -1,24 +1,33 @@
 <script setup>
 
     import {RouterView, RouterLink} from "vue-router"
-    import {ref} from "vue"
-    const counter = ref(0)
+
 
 </script>
 
 <template>
     <main>
-        <div class="links">
-            <RouterLink class="px-2" to="/">Home</RouterLink>
-            <RouterLink class="px-2" to="/about">About</RouterLink>
+        <div class="container">
+            <div class="links">
+                <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refreshe -->
+                <RouterLink active-class="links active" class="px-2 rounded-pill" to="/">Home</RouterLink>
+                <RouterLink active-class="links active" class="px-2 rounded-pill" to="/about">About</RouterLink>
+            </div>
+    
+            <RouterView />
+
         </div>
-
-        <h1>{{ counter }}</h1>
-        <button @click = "counter++" >count</button>
-
-        <RouterView />
     </main>
 
 </template>
+
+<style scoped>
+
+.active{
+    background-color:rgb(44, 43, 43);
+    color: rgb(246, 197, 0);
+}
+
+</style>
 
 

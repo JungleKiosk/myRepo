@@ -1,4 +1,4 @@
-export const carsData = [
+[
     {
         "id": 1,
         "make": "Chevrolet",
