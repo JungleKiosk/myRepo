@@ -12,6 +12,7 @@
                 <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refreshe -->
                 <RouterLink active-class="links active" class="px-2 rounded-pill" to="/">Home</RouterLink>
                 <RouterLink active-class="links active" class="px-2 rounded-pill" to="/about">About</RouterLink>
+                <RouterLink active-class="links active" class="px-2 rounded-pill" to="/projects">Projects</RouterLink>
             </div>
     
             <RouterView />
