@@ -1,15 +1,21 @@
 <script setup>
 
-    import {RouterView} from "vue-router"
+    import {RouterView, RouterLink} from "vue-router"
+    import {ref} from "vue"
+    const counter = ref(0)
 
 </script>
 
 <template>
     <main>
         <div class="links">
-            <a class="px-2" href="/">Home</a>
-            <a class="px-2" href="/about">About</a>
+            <RouterLink class="px-2" to="/">Home</RouterLink>
+            <RouterLink class="px-2" to="/about">About</RouterLink>
         </div>
+
+        <h1>{{ counter }}</h1>
+        <button @click = "counter++" >count</button>
+
         <RouterView />
     </main>
 
