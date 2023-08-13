@@ -25,14 +25,17 @@ onBeforeMount(() => {
     <div id="cont" class="container p-5">
         <div class="row">
             <h1>{{ car.make }}</h1>
-            <div class="col-lg-12">
+
+            <div class="col-lg-12" v-if="car">
+
                 <p>Body: {{ car.body }}</p>
                 <p>Price: {{ car.price }}</p>
                 <p>Year: {{ car.year }}</p>
 
+            </div>
 
-
-
+            <div v-else>
+                <h1>Not Found</h1>
             </div>
         </div>
     </div>
