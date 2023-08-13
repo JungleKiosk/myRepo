@@ -32,7 +32,7 @@ export default {
                     @click="router.push(`/car/${car.id}`)" >
 
                         <div class="card">
-                            <h1>{{ car.make }}</h1>
+                            <h1>{{ car.name }}</h1>
                             <p>{{ car.price }} $</p>
                         </div>
 
