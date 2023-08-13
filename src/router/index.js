@@ -29,8 +29,8 @@ const router = createRouter({
             component: MyProjectsView
         },
         {
-            path: "/car/:id",
-            name: "car",
+            path: "/project/:id",
+            name: "project",
             component: ProjectsView
         },
         {

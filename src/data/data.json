@@ -6,63 +6,17 @@
         "paks": "",
         "stack": "HTML - CSS - JS",
         "link": "https://junglekiosk.github.io/HelloVue/",
-        "data": "07/Jun/2023",
+        "data": "Jun/07/2023",
         "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit tenetur rerum saepe consequatur quam inventore autem assumenda tempora sapiente deleniti facilis dicta iure, corrupti in odio fugit. Officiis, aperiam accusantium."
     },
     {
         "id": 2,
-        "make": "Buick",
-        "body": "sedan",
-        "price": 25422,
-        "year": 2016
-    },
-    {
-        "id": 3,
-        "make": "Porsche",
-        "body": "SUV",
-        "price": 77693,
-        "year": 2018
-    },
-    {
-        "id": 5,
-        "make": "Audi",
-        "body": "SUV",
-        "price": 12242,
-        "year": 2011
-    },
-    {
-        "id": 6,
-        "make": "Chevrolet",
-        "body": "coupe",
-        "price": 145323,
-        "year": 2023
-    },
-    {
-        "id": 7,
-        "make": "Chevrolet",
-        "body": "SUV",
-        "price": 434,
-        "year": 2003
-    },
-    {
-        "id": 8,
-        "make": "Porsche",
-        "body": "Coupe",
-        "price": 277693,
-        "year": 2023
-    },
-    {
-        "id": 9,
-        "make": "Audi",
-        "body": "sedan",
-        "price": 82242,
-        "year": 2019
-    },
-    {
-        "id": 10,
-        "make": "Chevrolet",
-        "body": "coupe",
-        "price": 45323,
-        "year": 2020
+        "name": "test",
+        "environment": "Vue 3 + Vite",
+        "paks": "",
+        "stack": "QGIS - Google Earth Engine - Python",
+        "link": "https://junglekiosk.github.io/HelloVue/",
+        "data": "Jun/07/2023",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit tenetur rerum saepe consequatur quam inventore autem assumenda tempora sapiente deleniti facilis dicta iure, corrupti in odio fugit. Officiis, aperiam accusantium."
     }
 ]

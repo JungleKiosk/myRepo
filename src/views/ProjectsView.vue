@@ -4,16 +4,16 @@
 
 import { useRoute } from 'vue-router';
 import { ref, onBeforeMount } from "vue";
-import cars from "../data/data.json"
+import projects from "../data/data.json"
 
-const car = ref(null)
+const project = ref(null)
 const route = useRoute()
 const { id } = route.params;
 
 // console.log(route.params)
 
 onBeforeMount(() => {
-    car.value = cars.find(c => c.id === parseInt(id))
+    project.value = projects.find(c => c.id === parseInt(id))
 
 })
 
@@ -24,21 +24,25 @@ onBeforeMount(() => {
 <template>
     <div class="container p-5">
         <div class="row">
-            <h1>{{ car.name }}</h1>
-            <div class="col-lg-6">
-                <div class="col-lg-12" v-if="car">
-                    <p>environment: {{ car.environment }}</p>
-                    <p>stack: {{ car.stack }}</p>
-                    <p>data: {{ car.data }}</p>
+            <h1>{{ project.name }}</h1>
+            <div class="col-lg-6 align-items-center">
+                <div class="col-lg-12" v-if="project">
+                    <p>environment: {{ project.environment }}</p>
+                    <p>stack: {{ project.stack }}</p>
+                    <p>data: {{ project.data }}</p>
                 </div>
                 <div v-else>
                     <h1>Not Found</h1>
                 </div>
+            </div>
+            
+            <div class="col-lg-6" v-if="project">
+                <p> {{ project.desc }}</p>
+                <a v-if="project.link" :href="project.link" target="_blank">Go to project</a>
 
             </div>
-
-            <div class="col-lg-6">
-                <p> {{ car.desc }}</p>
+            <div v-else>
+                <h1>Not Found</h1>
             </div>
 
 
