@@ -39,16 +39,15 @@ export default {
 
                         <div class="card p-2 my-2 rounded-4 d-flex align-items-center justify-content-center">
                             <h4 class="mb-0 ">{{ project.name }}</h4>
-                            <!--        <img :src="project.image" alt="Project Image" class=" my-3 rounded-2"> -->
-                            <div class="text-center p-2" v-for="imgproj in imgProj" :key="imgproj.img">
-                                <a :href="imgproj.link" target="_blank">
-                                    <img class="rounded-4" :src="getImagePath(imgproj.img)" alt="Goal Image">
-                                </a>
-
-                            </div>
+                            
+                        </div>
+                        <div class="text-center p-2" v-for="imgproj in imgProj" :key="imgproj.img">
+                            <a :href="imgproj.link" target="_blank">
+                                <img class="rounded-4" :src="getImagePath(imgproj.img)" alt="Goal Image">
+                            </a>
 
                         </div>
-
+                        
                     </div>
                 </div>
             </div>
