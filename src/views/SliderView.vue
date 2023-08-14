@@ -59,7 +59,7 @@ export default {
 <style scoped>
 img {
     max-width: 100%;
-    max-height: 150px;
+    max-height: 300px;
 }
 
 .slider-container {

@@ -1,38 +1,47 @@
 <script setup>
 
-    import {RouterView, RouterLink} from "vue-router"
+import { RouterView, RouterLink } from "vue-router"
 
 
 </script>
 
 <template>
-    <main>
-        <div class="container">
-            <div class="links">
-                <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refreshe -->
-                <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/">Home</RouterLink>
-                <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/about">About</RouterLink>
-                <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/projects">Projects</RouterLink>
-                <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/pylearn">myColab</RouterLink>
+    <nav>
+        <div class="container-fluid my-4 px-5">
+            <div class="row">
+                <div class="col-12 col-lg-12">
 
+
+                    <div class="links">
+                        <!-- use <RouterLink></RouterLink> instead <a></a> to save for each pagand not refreshe -->
+                        <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/">Home</RouterLink>
+                        <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/about">About</RouterLink>
+                        <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/projects">Projects</RouterLink>
+                        <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/pylearn">myColab</RouterLink>
+                    </div>
+
+                </div>
             </div>
-    
+
+
             <RouterView />
 
-        </div>
-    </main>
 
+        </div>
+    </nav>
 </template>
 
 <style scoped>
-
-.page{
-    color: aqua;
+.page_link {
+    color: #ff6518;
     text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
 }
-.active{
-    background-color:rgb(44, 43, 43);
-    color: rgb(246, 197, 0);
+
+.active {
+    background-color: #ff6518;
+    color: #05011f;
 }
 
 </style>

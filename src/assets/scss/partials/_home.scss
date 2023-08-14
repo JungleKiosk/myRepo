@@ -1,80 +1,60 @@
 @use "./_variables.scss" as *;
 
 
-#footer {
+#home {
 
     color: $light;
-    margin-bottom: 5rem;
+    font-size: 25px;
 
-    .bg_intro{
-        background-color:$dark ;
+
+    .bg_intro {
+
+        border-left: 3px solid $clr_juice_button ;
+        padding: 2rem;
+
+        .txt_initial {
+            font-size: 50px;
+        }
+
+        .txt_fra {
+            color: $clr_juice_button;
+            font-size: 50px;
+        }
+
+        .txt_thin {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .txt_swich {
+            color: $clr_juice_button;
+            font-size: 40px;
+        }
+
+        a {
+            color: $clr_juice_button;
+            text-decoration: none;
+        }
+
+        .introduce p {
+            font-size: larger;
+        }
+
+        .introduce p a {
+            color: $info;
+            text-decoration-color: $info;
+        }
     }
 
-    .txt_thin{
-        color: $info;
+    .link_efct {
+        color: $clr_juice_button;
+        text-decoration: none;
+        transition: color 2s, box-shadow 2s;
+        text-shadow: 0px 0px 30px $clr_juice_button;
     }
 
-    .introduce p {
-        font-size: larger;
-    }
-
-    .introduce p a {
-        color: $info;
-        text-decoration-color: $info;
-    }
-
-    .col_goals_onu {
-        margin-top: 5rem;
-    }
-
-    .goals img {
-        width: auto;
-    }
-
-    .zoom-effect-goals {
-        transition: transform 0.2s ease-in-out;
-        transform-origin: center center;
-    }
-
-    .zoom-effect-goals:hover {
-        transform: scale(1.75);
-        border: 0;
-    }
-
-    .txt_neutral_github {
-        color: $neutral;
-    }
-
-    .col_github {
-        margin-bottom: 3rem;
-    }
-
-    .txt_github {
-        color: $secondary;
-        font-size: larger;
-
-    }
-
-    .my_contact {
-        width: 20%;
-        padding: 0.1rem;
-        background-color: $neutral;
-        border-radius: 20%;
-        box-shadow: 0px 0px 10px $neutral;
-        margin-right: 1rem;
-    }
-
-    .zoom-effect-contact {
-        transition: transform 3s ease-in-out;
-        transform-origin: center center;
-    }
-
-    .zoom-effect-contact:hover {
-        transform: scale(1.1);
-        border: 0;
-        border-bottom: 3px solid $info;
-        border-right: 3px solid $info;
-        box-shadow: 0px 0px 20px $info;
+    .link_efct:hover {
+        text-shadow: 0px 0px 10px $clr_juice_button;
     }
 
 }
