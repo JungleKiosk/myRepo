@@ -21,6 +21,7 @@ onBeforeMount(() => {
 </script>
 
 
+
 <template>
     <div class="container p-5">
         <div class="row">
@@ -54,19 +55,11 @@ onBeforeMount(() => {
 
         </div>
 
-        <div class="row mt-4">
-            <div class="col-lg-6">
-                <router-link v-if="prevProject" :to="`/project/${prevProject.id}`" class="btn btn-primary">Previous
-                    Project</router-link>
-            </div>
-            <div class="col-lg-6 text-right">
-                <router-link v-if="nextProject" :to="`/project/${nextProject.id}`" class="btn btn-primary">Next
-                    Project</router-link>
-            </div>
-        </div>
 
     </div>
 </template>
+
+
 
 
 
