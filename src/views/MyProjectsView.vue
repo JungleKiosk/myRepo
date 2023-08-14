@@ -1,7 +1,7 @@
 <script>
 
 import { ref } from "vue";
-import { useRouter } from "vue-router";
+import { useRouter } from "vue-router"; 
 import SliderView from "./SliderView.vue";
 
 import projectsData from "../data/data_projects.json";
