@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "HelloVue",
-        "image": "assets/img/projects/hello_vue.png",
+        "image": ".src/assets/img/projects/hello_vue.png",
         "environment": "Vue 3 + Vite",
         "paks": "",
         "stack": "HTML - CSS - JS",
