@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue"
 import AboutView from "../views/AboutView.vue"
-import ProjectsView from "../views/ProjectsView.vue"
+/* ------------------------------------------------- */
 import MyProjectsView from "../views/MyProjectsView.vue"
-import NotFoundView from "../views/NotFoundView.vue"
+import ProjectsView from "../views/ProjectsView.vue"
+/* ------------------------------------------------- */
 import PyLearnView from "../views/PyLearnView.vue"
-
+/* ------------------------------------------------- */
+import NotFoundView from "../views/NotFoundView.vue"
 
 
 const router = createRouter({
@@ -33,7 +35,7 @@ const router = createRouter({
             component: ProjectsView
         },
         {
-            path: "/pylearn/",
+            path: "/pylearn",
             name: "pylearn",
             component: PyLearnView
         },

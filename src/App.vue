@@ -13,7 +13,7 @@
                 <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/">Home</RouterLink>
                 <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/about">About</RouterLink>
                 <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/projects">Projects</RouterLink>
-                <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/pylearn">pyLearn</RouterLink>
+                <RouterLink active-class=" active" class="page px-2 rounded-pill" to="/pylearn">myColab</RouterLink>
 
             </div>
     
