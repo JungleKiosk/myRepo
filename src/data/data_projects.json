@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "HelloVue",
-        "image": "src/assets/img/projects/hello_vue.png",
+        "image": ".src/assets/img/projects/hello_vue.png",
         "environment": "Vue 3 + Vite",
         "paks": "",
         "stack": "HTML - CSS - JS",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "LUCAS 2022",
-        "image": "src/assets/img/projects/lucas_2022.png",
+        "image": ".src/assets/img/projects/lucas_2022.png",
         "environment": "QGIS - Google My Maps - Google Earth Pro",
         "paks": "",
         "stack": "Python",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "name": "VueLeaflet",
-        "image": "src/assets/img/projects/vue_leaflet.png",
+        "image": ".src/assets/img/projects/vue_leaflet.png",
         "environment": "Vue 3 + Vite",
         "paks": "",
         "stack": "HTML - CSS - JS",
