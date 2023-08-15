@@ -12,7 +12,7 @@
         <p class="txt_intro_hello my-3">
           Hello nice people!
           <br>
-          Welcome to my web app myRepo. <br>
+          Welcome to my web app.<br>
           Here you will find a place to learn and share topics concerning environmental challenges, analysis
           techniques, technological tools, curiosities and news.
           <br>
@@ -22,8 +22,8 @@
       </div>
 
       <div class="col-12 col-lg-4">
-          <img src="../assets/img/dec/happy_earth_intro.gif" class="gif">
-        </div>
+        <img src="../assets/img/dec/happy_earth_intro.gif" class="gif">
+      </div>
 
       <div class="col-12 col-lg-12">
         <p class="txt_intro">
@@ -40,7 +40,7 @@
         <p class="txt_intro">
           Through my personal notes I have created some material for didactic purposes to start programming in
           Python.
-          In the "My Colab" section, there will be a series of tutorials designed for those who are new to
+          In the "pyLearn" section, there will be a series of tutorials designed for those who are new to
           programming.
           Here I'll share step-by-step how to get started programming with Python, offering a resource for anyone
           who wants to get started with this flexible and powerful programming language.
@@ -59,7 +59,7 @@
       </div>
 
 
-      
+
       <div class="row justify-content-center align-items-center">
 
         <div class="col-12 col-lg-8">
@@ -82,9 +82,7 @@
 </template>
 
 <style scoped>
-
-img{
+img {
   width: 100%;
 }
-
 </style>

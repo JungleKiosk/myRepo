@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "name": "PyScratch⛵",
+        "name": "PyScratch",
         "link": "https://github.com/JungleKiosk/py_Scratch/blob/main/pyScratch.ipynb"
     },
     {
         "id": 2,
-        "name": "Pandas🐼",
+        "name": "Pandas",
         "link": "https://github.com/JungleKiosk/py_Scratch/blob/main/py_DataAnalysis.ipynb"
     },
     {
         "id": 3,
-        "name": "Exercises✏️",
+        "name": "Exercises",
         "link": "https://github.com/JungleKiosk/py_Scratch/blob/main/pyScratch_ex.ipynb"
     },
     {
         "id": 4,
-        "name": "GuessNumber🍀",
+        "name": "GuessNumber",
         "link": "https://github.com/JungleKiosk/py_Scratch/blob/main/pyScratch_GuessNumber.ipynb"
     },
     {

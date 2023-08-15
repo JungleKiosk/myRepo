@@ -1,7 +1,7 @@
 <script>
 
 import { ref } from "vue";
-import { useRouter } from "vue-router"; 
+import { useRouter } from "vue-router";
 import SliderView from "./SliderView.vue";
 
 import projectsData from "../data/data_projects.json";
@@ -28,22 +28,23 @@ export default {
 
 </script>
 
-
-
 <template>
     <div id="my_proj" class="container p-5">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 text-center">
-                <h1>my Projects</h1>
-                <div class="row m-5 p-5 justify-content-center">
+                <h1 class="txt_title">my Projects</h1>
 
+                <p class="txt_proj">
+                    Click on a project, go to the summary sheet and view the project via the link
+                </p>
+
+                <div class="row py-5 justify-content-center">
                     <div :to="`/project/${project.id}`" class="col-lg-3 col-md-4 col-sm-6" v-for="project in projects"
                         :key="project.id" @click="router.push(`/project/${project.id}`)">
-                        <div class="p-2 my-2 rounded-4 d-flex align-items-center justify-content-center">
-                            <h4 class="mb-0 ">{{ project.name }}</h4>
+                        <div class="project-card p-2 my-2 rounded-4 d-flex align-items-center justify-content-center">
+                            <h4 class="mb-0">{{ project.name }}</h4>
                         </div>
                     </div>
-
                 </div>
 
                 <SliderView :getImagePath="getImagePath" />
@@ -52,11 +53,25 @@ export default {
     </div>
 </template>
   
-
-  
 <style scoped>
-img {
-    max-width: 100%;
-    max-height: 150px;
+
+.txt_title {
+    color: #ff6518;
+    font-size: 80px;
+}
+
+.txt_proj{
+    font-size: 30px;
+}
+
+.project-card {
+    transition: transform 0.3s;
+    color: #ff6518;
+}
+
+.project-card:hover {
+    transform: scale(1.2);
+    color: #edf3f5;
 }
 </style>
+  

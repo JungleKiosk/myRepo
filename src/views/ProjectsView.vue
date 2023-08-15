@@ -24,18 +24,11 @@ onBeforeMount(() => {
 <template>
     <div class="container p-5">
         <div class="row">
-            <h1>{{ project.name }}</h1>
+            <h1 class="txt_title_proj">{{ project.name }}</h1>
             <div class="col-lg-6 align-items-center">
                 <div class="col-lg-12" v-if="project">
                     <br>
-                    <h3>Environment: </h3>
-                    <p>{{ project.environment }}</p>
-                    <br>
-                    <h3>Stack:</h3>
-                    <p> {{ project.stack }}</p>
-                    <br>
-                    <h3>Start date:</h3>
-                    <p>{{ project.data }}</p>
+                    <h2>{{ project.data }}</h2>
                 </div>
                 <div v-else>
                     <h1>Not Found</h1>
@@ -43,8 +36,12 @@ onBeforeMount(() => {
             </div>
 
             <div class="col-lg-6" v-if="project">
-                <p> {{ project.desc }}</p>
-                <a v-if="project.link" :href="project.link" target="_blank">Go to project</a>
+                <p class="txt_desc"> {{ project.desc }}</p>
+
+                <button class="btn btn_btlink_proj pulse-heart">
+                    <a class="link_proj" v-if="project.link" :href="project.link" target="_blank">Go to project</a>
+                </button>
+
 
             </div>
             <div v-else>
@@ -62,4 +59,35 @@ onBeforeMount(() => {
 
 
 
-<style scoped></style>
+<style scoped>
+.txt_title_proj {
+    color: #ff6518;
+    font-size: 80px;
+}
+
+.txt_desc {
+    font-size: 30px;
+}
+
+.btn_btlink_proj{
+    background-color: #ff6518;
+}
+.link_proj {
+    color:#05011f;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.pulse-heart {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+}
+</style>
