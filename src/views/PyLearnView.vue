@@ -1,5 +1,4 @@
 
-
 <script>
 import colabProjectData from "../data/data_py.json";
 
@@ -22,18 +21,22 @@ export default {
             <div class="col-lg-12 text-center">
                 <h1 class="txt_title_colab">myColab</h1>
                 <img src="../assets/img/dec/pip.gif" class="gif">
-   
+
 
                 <div class="row p-5 justify-content-center">
 
                     <h1 class="py-3"> Go to the Colab projects</h1>
+                    
+                    <div>
 
-                    <button v-for="project in colab_projects" :key="project.id" class="col-lg-2 col-md-4 col-sm-6 btn rounded-5 btn_colab mx-2"
-                        @click="openLink(project.link)">
-                        <div class="p-2 rounded-4 d-flex align-items-center justify-content-center">
-                            <h6 class="mb-0 font-weight-bold">{{ project.name }}</h6>
+                    </div>
+                    <a v-for="project in colab_projects" :key="project.id" :href="project.link"
+                        class="col-lg-2 col-md-4 col-sm-6 link_colab" target="_blank">
+                        <div class="project-card p-2 rounded-4 d-flex align-items-center justify-content-center">
+                            <h5 class="mb-0 link_title">{{ project.name }}</h5>
                         </div>
-                    </button>
+                    </a>
+
                 </div>
 
             </div>
@@ -72,7 +75,7 @@ export default {
                 <img src="../assets/img/dec/python.gif" alt="">
             </div>
 
-          
+
 
             <div class="col-12 col-lg-12 txt_intro_colab">
                 <p>
@@ -123,21 +126,28 @@ img {
     color: #ff6518;
 }
 
-.btn_colab {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 3px solid #ff6518;
-    color: #ff6518;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn_colab:hover {
-    background-color: #e55600;
-    color: #05011f;
-}
-
 .txt_intro_colab {
     font-size: 25px;
+}
+
+.link_colab{
+    text-decoration: none;
+    color: #ff6518;
+    font-size: 25px;
+}
+.link_title{
+    font-size: 25px;
+}
+
+
+.project-card {
+    transition: transform 0.3s;
+    color: #ff6518;
+}
+
+.project-card:hover {
+    transform: scale(1.2);
+    color: #edf3f5;
 }
 
 </style>
