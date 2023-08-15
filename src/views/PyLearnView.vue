@@ -69,7 +69,7 @@ export default {
 
             <div class="col-12 col-lg-4">
 
-                <img src="../assets/img/dec/pip.gif" alt="">
+                <img src="../assets/img/dec/python.gif" alt="">
             </div>
 
           

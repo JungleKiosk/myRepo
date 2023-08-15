@@ -64,7 +64,7 @@
 
         <div class="col-12 col-lg-8">
           <p class="txt_intro">
-            Thanks for being here and enjoy this exciting journey of discovery and understanding of our cosmos.
+            Thanks to be here and enjoy this exciting journey of discovery and understanding of our cosmos.
           </p>
         </div>
 
