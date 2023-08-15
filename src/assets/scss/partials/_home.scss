@@ -1,60 +1,24 @@
 @use "./_variables.scss" as *;
 
 
-#home {
+.txt_about {
 
-    color: $light;
+    font-size: 100px;
+    color: $clr_juice_button;
+}
+
+.jumbotron{
+
+    border-top: 2px solid $clr_juice_button;
+
+    .txt_intro_hello {
+        font-size: 40px;
+    }
+}
+
+
+
+.txt_intro {
     font-size: 25px;
-
-
-    .bg_intro {
-
-        border-left: 3px solid $clr_juice_button ;
-        padding: 2rem;
-
-        .txt_initial {
-            font-size: 50px;
-        }
-
-        .txt_fra {
-            color: $clr_juice_button;
-            font-size: 50px;
-        }
-
-        .txt_thin {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .txt_swich {
-            color: $clr_juice_button;
-            font-size: 40px;
-        }
-
-        a {
-            color: $clr_juice_button;
-            text-decoration: none;
-        }
-
-        .introduce p {
-            font-size: larger;
-        }
-
-        .introduce p a {
-            color: $info;
-            text-decoration-color: $info;
-        }
-    }
-
-    .link_efct {
-        color: $clr_juice_button;
-        text-decoration: none;
-        transition: color 2s, box-shadow 2s;
-        text-shadow: 0px 0px 30px $clr_juice_button;
-    }
-
-    .link_efct:hover {
-        text-shadow: 0px 0px 10px $clr_juice_button;
-    }
 
 }

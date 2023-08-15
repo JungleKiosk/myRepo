@@ -2,6 +2,8 @@
 
 @use "./partials/_variables.scss" as *;
 @use "./partials/_home.scss";
+@use "./partials/_about.scss";
+
 
 body {
     background-color: $clr_bruise;
