@@ -16,15 +16,15 @@
           Here you will find a place to learn and share topics concerning environmental challenges, analysis
           techniques, technological tools, curiosities and news.
           <br>
-          🌍🔬💻🌱
+          🔬💻🌱
           <br>
         </p>
       </div>
+
       <div class="col-12 col-lg-4">
-        <h1>test col-4</h1>
-        <img class="gif" v-if="hide" :src="tobyfoxsleep" v-on:mouseover="toggleGif">
-        <img class="gif" v-if="showdog" v-on:mouseleave="toggleGis" :src="tobyfox">
-      </div>
+          <img src="../assets/img/dec/happy_earth_intro.gif" class="gif">
+        </div>
+
       <div class="col-12 col-lg-12">
         <p class="txt_intro">
           <br>
@@ -55,13 +55,36 @@
           resources, continuous self-improvement and horizontal knowledge sharing.
           <br>
           You are all invited to participate and contribute, no limits!
-          <br> <br>
-          Thank you for being here and joining me on this exciting journey of discovering and understanding our
-          cosmos.
         </p>
       </div>
+
+
+      
+      <div class="row justify-content-center align-items-center">
+
+        <div class="col-12 col-lg-8">
+          <p class="txt_intro">
+            Thanks for being here and enjoy this exciting journey of discovery and understanding of our cosmos.
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <img src="../assets/img/dec/happy_earth.gif" class="gif">
+        </div>
+
+
+      </div>
+
+
+
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+img{
+  width: 100%;
+}
+
+</style>

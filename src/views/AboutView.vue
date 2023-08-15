@@ -49,6 +49,7 @@ setInterval(() => {
                             </transition>
                         </p>
                     </div>
+                    
 
 
                     <!-- <div class="col-12 col-lg-4 d-flex flex-wrap goals mx-4 col_goals_onu">
