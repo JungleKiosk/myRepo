@@ -21,6 +21,7 @@ import { RouterView, RouterLink } from "vue-router"
                     </div>
 
                 </div>
+
             </div>
 
 
@@ -43,7 +44,6 @@ import { RouterView, RouterLink } from "vue-router"
     background-color: #ff6518;
     color: #05011f;
 }
-
 </style>
 
 

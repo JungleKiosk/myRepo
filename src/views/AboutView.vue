@@ -1,17 +1,5 @@
 <script setup>
-import { ref } from "vue";
 
-const text_swich = ref("QGIS");
-const text_Key = ref(0);
-
-const alternatives = ["QGIS", "Python", "RStudio", "Google Earth Engine", "HTML - CSS - JS", "Leaflet", "Vite + Vuejs 3", "VueLeafle, VueRouter, VueChart", "Sass", "SQL", "QGIS"];
-let currentIndex = 0;
-
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % alternatives.length;
-    text_swich.value = alternatives[currentIndex];
-    text_Key.value++;
-}, 2000);
 
 </script>
 
@@ -43,12 +31,11 @@ setInterval(() => {
                             <br>
                             I have acquired a solid knowledge in GIS analysis, Remote Sensing and I broadened my skills by
                             attending a full-stack web development course.
-                            <transition>
-                                <h1 class="py-3">My Stack: <span class="txt_swich" :key="textKey">{{ text_swich }}</span>
-                                </h1>
-                            </transition>
+             
                         </p>
                     </div>
+
+                    
                     
 
 

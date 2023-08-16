@@ -46,7 +46,7 @@ export default {
                         </div>
                     </div>
                 </div>
-
+                
                 <SliderView :getImagePath="getImagePath" />
             </div>
         </div>

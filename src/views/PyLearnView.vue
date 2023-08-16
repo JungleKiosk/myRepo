@@ -56,26 +56,22 @@ export default {
                     Python can be used in several ways, both locally and in the cloud. Here are some of
                     most common usage options:
                     <br>
-                    Local download: You can download Python from the official site (https://www.python.org/) and install it
+                    Local download: You can download Python from the 
+                    <a style="color: #ff6518;" href="https://www.python.org/">official site </a> 
+                    and install it
                     on
                     your computer. After installation, you can use the language directly from the command line of the
                     your operating system or through an integrated development environment (IDE).
                 </p>
             </div>
-            <div class="col-12 col-lg-8 txt_intro_colab">
+            <div class="col-12 col-lg-12 txt_intro_colab">
                 <p>
                     Usage via Terminal: Once Python is installed, you can open your terminal or dei prompt
                     commands and start the Python interpreter by typing python. This allows you to execute Python statements
                     interactively directly from the command line.
                 </p>
             </div>
-
-            <div class="col-12 col-lg-4">
-
-                <img src="../assets/img/dec/python.gif" alt="">
-            </div>
-
-
+       
 
             <div class="col-12 col-lg-12 txt_intro_colab">
                 <p>

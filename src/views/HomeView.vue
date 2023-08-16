@@ -8,6 +8,7 @@
   <div id="cont" class="container p-5">
     <div class="row">
       <h1 class="txt_about my-3">myRepo</h1>
+
       <div class="col-12 col-lg-8 jumbotron my-2">
         <p class="txt_intro_hello my-3">
           Hello nice people!
@@ -36,7 +37,7 @@
           tricks, discover how web development technologies can be used to present and share the results.
         </p>
       </div>
-      <div class="col-12 col-lg-12">
+      <div class="col-12 col-lg-8">
         <p class="txt_intro">
           Through my personal notes I have created some material for didactic purposes to start programming in
           Python.
@@ -46,6 +47,7 @@
           who wants to get started with this flexible and powerful programming language.
         </p>
       </div>
+
       <div class="col-12 col-lg-12">
         <p class="txt_intro">
           I am excited to share my discoveries, challenges and successes with the huge community.
