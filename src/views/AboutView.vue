@@ -73,9 +73,13 @@ function startTyping() {
                             <div class="border_rotate_1"></div>
                             <div class="border_rotate_2"></div>
                             <div class="border_rotate_3"></div>
+                            <div class="border_rotate_4"></div>
+                            <div class="border_rotate_5"></div>
 
+                            
+                            
                         </div>
-
+                        
 
                     </div>
 
@@ -104,110 +108,4 @@ img {
     width: 100%;
 }
 
-.circle {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    border: 5px solid transparent;
-    overflow: hidden;
-}
-
-.border_rotate_1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    border: 1px solid transparent;
-    border-bottom: 15px solid #041c42;
-    animation: rotate 20s linear infinite, fade-out 5s ease forwards;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.border_rotate_2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    border: 1px solid transparent;
-    border-top: 5px solid #93b0b8;
-    animation: rotate 18s linear infinite, fade-out 5s ease forwards;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
-.border_rotate_3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    border: 1px solid transparent;
-    border-top: 12px solid #ff6518;
-    animation: rotate 10s linear infinite, fade-out 5s ease forwards;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
-.fade-in {
-    opacity: 0;
-    animation: fade-in 2s ease forwards;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.bg_intro {
-    border-left: 3px solid transparent;
-    animation: border-left-appear 2s 1000ms forwards;
-}
-
-@keyframes border-left-appear {
-    from {
-        border-left-color: transparent;
-    }
-
-    to {
-        border-left-color: #ff6518;
-    }
-}
 </style>
