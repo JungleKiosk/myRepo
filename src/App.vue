@@ -18,6 +18,8 @@ import { RouterView, RouterLink } from "vue-router"
                         <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/about">About</RouterLink>
                         <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/projects">Projects</RouterLink>
                         <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/pylearn">pyLearn</RouterLink>
+                        <RouterLink active-class=" active" class="page_link p-2 rounded-pill" to="/coding">Coding</RouterLink>
+
                     </div>
 
                 </div>
