@@ -36,7 +36,7 @@ function startTyping() {
             <div class="container my-5">
                 <div class="row justify-content-center align-items-center">
 
-                    <div class="col-12 col-lg-12 bg_intro rounded-4 py-5 my-2 align-content-center">
+                    <div class="col-12 col-lg-8 bg_intro rounded-4 py-5 my-2 align-content-center">
 
                         <h1 class="txt_initial" :class="{ 'typing': introVisible }">
                             <strong><span class="colored-yellow">{{ textToShow.slice(0, 7) }}</span></strong><span
@@ -64,6 +64,21 @@ function startTyping() {
                         </p>
                     </div>
 
+                    <div class="col-12 col-lg-4">
+
+                        <div class="circle">
+                            <div class="inner-circle">
+                                <img class="fade-in" src="../assets/img/dec/me-no-bkg.png" alt="">
+                            </div>
+                            <div class="border_rotate_1"></div>
+                            <div class="border_rotate_2"></div>
+                            <div class="border_rotate_3"></div>
+
+                        </div>
+
+
+                    </div>
+
 
 
 
@@ -86,36 +101,85 @@ function startTyping() {
 
 <style scoped>
 img {
-    width: 500px;
+    width: 100%;
 }
 
-
-.typing {
-    border-right: 3px solid #000;
-    animation: typing 15s steps(var(--introTextLength, 0)) 15s forwards, blink-caret 15s step-end infinite;
+.circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    overflow: hidden;
 }
 
-@keyframes typing {
+.border_rotate_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    border-bottom: 15px solid #041c42;
+    animation: rotate 20s linear infinite, fade-out 5s ease forwards;
+}
+
+@keyframes rotate {
     from {
-        width: 0;
+        transform: rotate(0deg);
     }
 
     to {
-        width: 100%;
+        transform: rotate(360deg);
     }
 }
 
-@keyframes blink-caret {
+.border_rotate_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    border-top: 5px solid #93b0b8;
+    animation: rotate 18s linear infinite, fade-out 5s ease forwards;
+}
 
-    from,
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
     to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: black;
+        transform: rotate(360deg);
     }
 }
+
+
+.border_rotate_3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    border-top: 12px solid #ff6518;
+    animation: rotate 10s linear infinite, fade-out 5s ease forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 .fade-in {
     opacity: 0;
@@ -141,6 +205,7 @@ img {
     from {
         border-left-color: transparent;
     }
+
     to {
         border-left-color: #ff6518;
     }
