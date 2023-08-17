@@ -68,16 +68,14 @@ function startTyping() {
 
                         <div class="circle">
                             <div class="inner-circle">
+                                <div class="border_rotate_over1"></div>
                                 <img class="fade-in" src="../assets/img/dec/me-no-bkg.png" alt="">
                             </div>
-                            <div class="border_rotate_1"></div>
+                   
                             <div class="border_rotate_2"></div>
                             <div class="border_rotate_3"></div>
                             <div class="border_rotate_4"></div>
                             <div class="border_rotate_5"></div>
-
-                            
-                            
                         </div>
                         
 
