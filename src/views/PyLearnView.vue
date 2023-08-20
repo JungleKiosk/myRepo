@@ -20,9 +20,6 @@ export default {
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-12 text-center">
                 <h1 class="txt_title_colab">myColab</h1>
-                <img src="../assets/img/dec/pip.gif" class="gif">
-
-
                 <div class="row p-5 justify-content-center">
 
                     <h1 class="py-3"> Go to the Colab projects</h1>
@@ -57,7 +54,7 @@ export default {
                     most common usage options:
                     <br>
                     Local download: You can download Python from the 
-                    <a style="color: #ff6518;" href="https://www.python.org/">official site </a> 
+                    <a style="color: #44bc84;" href="https://www.python.org/">official site </a> 
                     and install it
                     on
                     your computer. After installation, you can use the language directly from the command line of the
@@ -119,7 +116,7 @@ img {
 
 .txt_title_colab {
     font-size: 100px;
-    color: #ff6518;
+    color: #44bc84;
 }
 
 .txt_intro_colab {
@@ -128,7 +125,7 @@ img {
 
 .link_colab{
     text-decoration: none;
-    color: #ff6518;
+    color: #44bc84;
     font-size: 25px;
 }
 .link_title{
@@ -138,7 +135,7 @@ img {
 
 .project-card {
     transition: transform 0.3s;
-    color: #ff6518;
+    color: #44bc84;
 }
 
 .project-card:hover {

@@ -1,11 +1,21 @@
 @use "./_variables.scss" as *;
 
 
-.txt_about {
+.txt_home {
     font-size: 100px;
     color: $clr_juice_button;
+    text-shadow: 0 0 5px #44bc84, 0 0 5px #44bc84, 0 0 20px #44bc84;
+    animation: glow 5s ease-in-out infinite;
 }
 
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px #44bc84, 0 0 5px #44bc84, 0 0 20px #44bc84;
+    }
+    25%, 50% {
+        text-shadow: 0 0 10px #286448, 0 0 15px #286448, 0 0 25px #286448;
+    }
+}
 .jumbotron{
 
     border-top: 2px solid $clr_juice_button;

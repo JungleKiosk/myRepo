@@ -61,7 +61,7 @@ onBeforeMount(() => {
 
 <style scoped>
 .txt_title_proj {
-    color: #ff6518;
+    color: #44bc84;
     font-size: 80px;
 }
 
@@ -70,10 +70,10 @@ onBeforeMount(() => {
 }
 
 .btn_btlink_proj{
-    background-color: #ff6518;
+    background-color: #44bc84;
 }
 .link_proj {
-    color:#05011f;
+    color:#010e16;
     font-weight: 900;
     text-decoration: none;
 }

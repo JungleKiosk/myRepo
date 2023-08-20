@@ -56,7 +56,7 @@ export default {
 <style scoped>
 
 .txt_title {
-    color: #ff6518;
+    color: #44bc84;
     font-size: 80px;
 }
 
@@ -66,7 +66,7 @@ export default {
 
 .project-card {
     transition: transform 0.3s;
-    color: #ff6518;
+    color: #44bc84;
 }
 
 .project-card:hover {

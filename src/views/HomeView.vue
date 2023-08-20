@@ -7,7 +7,7 @@
 <template>
   <div id="cont" class="container p-5">
     <div class="row">
-      <h1 class="txt_about my-3">myRepo</h1>
+      <h1 class="txt_home my-3">myRepo</h1>
 
       <div class="col-12 col-lg-8 jumbotron my-2">
         <p class="txt_intro_hello my-3">

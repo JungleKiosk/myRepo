@@ -35,15 +35,15 @@ import { RouterView, RouterLink } from "vue-router"
 
 <style scoped>
 .page_link {
-    color: #ff6518;
+    color: #44bc84;
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
 }
 
 .active {
-    background-color: #ff6518;
-    color: #05011f;
+    background-color: #44bc84;
+    color: #010e16;
 }
 </style>
 
