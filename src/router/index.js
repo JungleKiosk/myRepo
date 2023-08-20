@@ -7,6 +7,8 @@ import MyProjectsView from "../views/MyProjectsView.vue"
 import ProjectsView from "../views/ProjectsView.vue"
 /* ------------------------------------------------- */
 import PyLearnView from "../views/PyLearnView.vue"
+import NewsView from "../views/NewsView.vue"
+
 
 /* ------------------------------------------------- */
 import NotFoundView from "../views/NotFoundView.vue"
@@ -42,6 +44,11 @@ const router = createRouter({
             path: "/pylearn",
             name: "pylearn",
             component: PyLearnView
+        },
+        {
+            path: "/news",
+            name: "news",
+            component: NewsView
         },
         {
             path: "/:pathMatch(.*)*",

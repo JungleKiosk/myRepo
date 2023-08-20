@@ -28,6 +28,7 @@ onBeforeMount(() => {
             <div class="col-lg-6 align-items-center">
                 <div class="col-lg-12" v-if="project">
                     <br>
+                    <h4>Start Date:</h4>
                     <h2>{{ project.data }}</h2>
                 </div>
                 <div v-else>
