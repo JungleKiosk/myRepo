@@ -96,7 +96,7 @@
         border-radius: inherit;
         border: 1px solid transparent;
         border-top: 5px solid #93b0b8;
-        animation: rotate 20s linear infinite, fade-out 5s ease forwards;
+        animation: rotate 25s linear infinite, fade-out 5s ease forwards;
     }
 
     @keyframes rotate {
@@ -118,7 +118,7 @@
         border-radius: inherit;
         border: 1px solid transparent;
         border-top: 5px solid #0699c29f;
-        animation: rotate 22s linear infinite, fade-out 5s ease forwards;
+        animation: rotate 28s linear infinite, fade-out 5s ease forwards;
     }
 
     @keyframes rotate {
@@ -140,9 +140,10 @@
         height: 100%;
         border-radius: inherit;
         border: 1px solid transparent;
-        border-top: 5px solid #44bc84;
+        border-top: 5px solid $clr_juice_button;
         animation: rotate 10s linear infinite, fade-out 5s ease forwards;
     }
+
 
     @keyframes rotate {
         from {
@@ -162,7 +163,7 @@
         height: 100%;
         border-radius: inherit;
         border: 1px solid transparent;
-        border-top: 3px solid #0699c29f;
+        border-top: 3px solid #0699c2;
         animation: rotateAntiClockwise 5s linear infinite, fade-out 5s ease forwards;
 
     }
