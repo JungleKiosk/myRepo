@@ -1,0 +1,35 @@
+@use "./_variables.scss" as *;
+
+.card {
+    border: none;
+  /*   box-shadow: 0 4px 40px #44bc84; */
+}
+
+.bg_card_header{
+    background-color: $card_news_header;
+}
+
+.bg_card{
+  background-color: $card_news_body;
+}
+
+  .card-title {
+    font-size: 2rem;
+    color: $bg_body;
+  }
+  
+  .card-text {
+    font-size: 1.5rem;
+    color: $bg_body;
+  }
+  
+  .card-footer {
+    background-color: $card_news_body;
+    border-top: none;
+    text-align: right;
+    padding: 0.5rem;
+  }
+  
+  .text-muted {
+    font-size: 0.8rem;
+  }
