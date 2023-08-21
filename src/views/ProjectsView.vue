@@ -30,6 +30,9 @@ onBeforeMount(() => {
                     <br>
                     <h4>Start Date:</h4>
                     <h2>{{ project.data }}</h2>
+                    <button class="my-3 btn btn_btlink_proj pulse-heart">
+                        <a class="link_proj" v-if="project.link" :href="project.link" target="_blank">Go to project</a>
+                    </button>
                 </div>
                 <div v-else>
                     <h1>Not Found</h1>
@@ -39,9 +42,6 @@ onBeforeMount(() => {
             <div class="col-lg-6" v-if="project">
                 <p class="txt_desc"> {{ project.desc }}</p>
 
-                <button class="btn btn_btlink_proj pulse-heart">
-                    <a class="link_proj" v-if="project.link" :href="project.link" target="_blank">Go to project</a>
-                </button>
 
 
             </div>
