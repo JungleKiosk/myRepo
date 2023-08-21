@@ -1,0 +1,32 @@
+@use "./_variables.scss" as *;
+
+
+.txt_title_colab {
+    font-size: 100px;
+    color: $clr_juice_button;
+}
+
+.txt_intro_colab {
+    font-size: 25px;
+}
+
+.link_colab {
+    text-decoration: none;
+    color: $clr_juice_button;
+    font-size: 25px;
+}
+
+.link_title {
+    font-size: 25px;
+}
+
+
+.project-card {
+    transition: transform 0.3s;
+    color: $clr_juice_button;
+}
+
+.project-card:hover {
+    transform: scale(1.2);
+    color: #edf3f5;
+}

@@ -1,15 +1,33 @@
 
 <script>
+
 import colabProjectData from "../data/data_py.json";
+
 
 export default {
     name: "PyLearnView",
     setup() {
         const colab_projects = colabProjectData;
+        const upcoming_projects = [
+            { name: "Project 1" },
+            { name: "Project 2" },
+            { name: "Project 3" },
+        ];
+
+        let currentIndex = 0;
+        const timer = setInterval(() => {
+            currentIndex = (currentIndex + 1) % upcoming_projects.length;
+        }, 3000);
         return {
             colab_projects,
+            upcoming_projects,
+            timer,
+            currentIndex
         };
-    }
+    },
+    beforeUnmount() {
+        clearInterval(this.timer);
+    },
 };
 </script>
 
@@ -23,7 +41,7 @@ export default {
                 <div class="row p-5 justify-content-center">
 
                     <h1 class="py-3"> Go to the Colab projects</h1>
-                    
+
                     <div>
 
                     </div>
@@ -40,65 +58,19 @@ export default {
 
             <div class="col-12 col-lg-12 txt_intro_colab">
                 <p>
-                    Introduction to Python and its usage options:
-                    <br>
-                    Python is a versatile and powerful programming language that is widely used for the development of
-                    web applications, data analytics, automation, artificial intelligence and much more. One of
-                    Python's main feature is its readable and intuitive syntax, which makes it suitable for both
-                    for beginners as well as experienced developers.
-                </p>
-            </div>
-            <div class="col-12 col-lg-12 txt_intro_colab">
-                <p>
-                    Python can be used in several ways, both locally and in the cloud. Here are some of
-                    most common usage options:
-                    <br>
-                    Local download: You can download Python from the 
-                    <a style="color: #44bc84;" href="https://www.python.org/">official site </a> 
-                    and install it
-                    on
-                    your computer. After installation, you can use the language directly from the command line of the
-                    your operating system or through an integrated development environment (IDE).
-                </p>
-            </div>
-            <div class="col-12 col-lg-12 txt_intro_colab">
-                <p>
-                    Usage via Terminal: Once Python is installed, you can open your terminal or dei prompt
-                    commands and start the Python interpreter by typing python. This allows you to execute Python statements
-                    interactively directly from the command line.
-                </p>
-            </div>
-       
+                    This section gives you a starting point for mastering Python, a powerful and versatile programming
+                    language. We'll start by introducing the basics of using Python through Google Colab, an interactive
+                    online development environment accessible from any device with a Google account. <br> <br>
 
-            <div class="col-12 col-lg-12 txt_intro_colab">
-                <p>
-                    Integrated Development Environment (IDE): IDEs are software tools that make it easier to write,
-                    debugging and executing code. Some of the popular IDEs for Python development include
-                    Visual Studio Code (VSC) and PyCharm. These IDEs offer advanced features such as recognition
-                    automatic code, integrated debugging and integration with project management tools.
-                </p>
-            </div>
-            <div class="col-12 col-lg-12 txt_intro_colab">
-                <p>
-                    Google Colab (Colaboratory): Google Colab is a cloud-based service that allows you to write and
-                    run Python code in browsers. Offers free access to Google's computing resources and
-                    allows you to work on interactive notebooks. This is especially useful for sharing e
-                    collaborate on Python projects without having to install anything locally.
-                </p>
-            </div>
-            <div class="col-12 col-lg-12 txt_intro_colab">
-                <p>
-                    Usage differences between on-premises and cloud (such as Google Colab) may include the
-                    management of system resources, access to external libraries and collaboration with others
-                    developers. Also, using professional IDEs like VSC or PyCharm can offer more advanced tools
-                    for writing and debugging code versus a simple terminal.
-                </p>
-            </div>
-            <div class="col-12 col-lg-12 txt_intro_colab">
-                <p>
-                    Ultimately, Python offers multiple ways to use it, allowing developers to adapt
-                    to their preferences and project requirements, whether through local installation or usage
-                    in the cloud through services such as Google Colab.
+                    We will differentiate between using Python in a local environment and the experience offered by Colab.
+                    We'll start with an introduction to Colab, exploring its intuitive interface, and learning how to write
+                    and run Python code right in the browser. Next, we'll design a smooth transition to installing Python
+                    locally using tools like Jupyter and Visual Studio Code. <br> <br>
+
+                    In the next few sections, we'll walk through how to set up Python on your computer and take advantage of
+                    Jupiter Extensions and Visual Studio Code for a personalized development experience. Whether you're a
+                    complete beginner or already have a foundation in programming, this section will walk you through the
+                    empowering world of Python and prepare you for the more advanced adventures ahead.
                 </p>
             </div>
 
@@ -109,38 +81,5 @@ export default {
 
 
 <style scoped>
-img {
-    max-width: 100%;
-    max-height: 150px;
-}
-
-.txt_title_colab {
-    font-size: 100px;
-    color: #44bc84;
-}
-
-.txt_intro_colab {
-    font-size: 25px;
-}
-
-.link_colab{
-    text-decoration: none;
-    color: #44bc84;
-    font-size: 25px;
-}
-.link_title{
-    font-size: 25px;
-}
-
-
-.project-card {
-    transition: transform 0.3s;
-    color: #44bc84;
-}
-
-.project-card:hover {
-    transform: scale(1.2);
-    color: #edf3f5;
-}
 
 </style>

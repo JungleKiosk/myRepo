@@ -40,7 +40,7 @@ export default {
           </div>
           <img :src="getImagePath(newsItem.image)" class="" alt="News Image">
           <div class="card-footer">
-            <small class="text-muted">{{ newsItem.date }}</small>
+            <small class="text-date">{{ newsItem.date }}</small>
           </div>
         </div>
       </div>
@@ -53,4 +53,3 @@ export default {
 /* Stili personalizzati per le cards */
 
 </style>
-  
