@@ -67,7 +67,7 @@ onBeforeMount(() => {
 }
 
 .txt_desc {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .btn_btlink_proj{
