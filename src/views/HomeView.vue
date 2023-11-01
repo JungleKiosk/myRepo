@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div id="cont" class="container p-5">
+  <div id="cont" class="container p-3 p-md-5">
     <div class="row">
       <h1 class="txt_home my-3">myRepo</h1>
 

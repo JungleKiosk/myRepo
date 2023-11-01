@@ -1,33 +1,36 @@
 @use "./_variables.scss" as *;
 
-
 .txt_home {
-    font-size: 100px;
+    font-size: 3.5rem; /* Imposta la dimensione del testo per il titolo */
     color: $clr_juice_button;
     text-shadow: 0 0 5px #44bc84, 0 0 5px #44bc84, 0 0 20px #44bc84;
     animation: glow 5s ease-in-out infinite;
 }
 
-@keyframes glow {
-    0%, 100% {
-        text-shadow: 0 0 5px #44bc84, 0 0 5px #44bc84, 0 0 20px #44bc84;
-    }
-    25%, 50% {
-        text-shadow: 0 0 10px #286448, 0 0 15px #286448, 0 0 25px #286448;
-    }
-}
-.jumbotron{
-
-    border-top: 2px solid $clr_juice_button;
-
-    .txt_intro_hello {
-        font-size: 40px;
-    }
-}
-
-
-
 .txt_intro {
-    font-size: 25px;
+    font-size: 1.6rem; /* Imposta la dimensione del testo per il contenuto */
+}
 
+/* Stili per il jumbotron */
+.jumbotron {
+    border-top: 2px solid $clr_juice_button;
+}
+
+.txt_intro_hello {
+    font-size: 2rem; /* Imposta la dimensione del testo all'interno del jumbotron */
+}
+
+/* Media query per dispositivi di diverse dimensioni */
+@media (max-width: 768px) {
+  .txt_home {
+    font-size: 2rem; /* Adatta la dimensione del testo per i dispositivi mobili */
+  }
+
+  .txt_intro {
+    font-size: 1.2rem; /* Adatta la dimensione del testo per i dispositivi mobili */
+  }
+
+  .txt_intro_hello {
+    font-size: 1.5rem; /* Adatta la dimensione del testo all'interno del jumbotron per i dispositivi mobili */
+  }
 }
